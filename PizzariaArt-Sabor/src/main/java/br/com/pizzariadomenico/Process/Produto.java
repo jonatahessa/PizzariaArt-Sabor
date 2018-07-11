@@ -14,11 +14,12 @@ public class Produto {
     private int codigo;
     private String nome;
     private String descricao;
-    private String preco;
-    private String precoBroto;
+    private String broto;
+    private String media;
+    private String grande;
+    private String familia;
     private String ativo;
     private String tipo;
-    private String subtipo;
 
     public int getCodigo() {
         return codigo;
@@ -44,20 +45,36 @@ public class Produto {
         this.descricao = descricao;
     }
 
-    public String getPreco() {
-        return preco;
+    public String getBroto() {
+        return broto;
     }
 
-    public void setPreco(String preco) {
-        this.preco = preco;
+    public void setBroto(String broto) {
+        this.broto = broto;
     }
 
-    public String getPrecoBroto() {
-        return precoBroto;
+    public String getMedia() {
+        return media;
     }
 
-    public void setPrecoBroto(String precoBroto) {
-        this.precoBroto = precoBroto;
+    public void setMedia(String media) {
+        this.media = media;
+    }
+
+    public String getGrande() {
+        return grande;
+    }
+
+    public void setGrande(String grande) {
+        this.grande = grande;
+    }
+
+    public String getFamilia() {
+        return familia;
+    }
+
+    public void setFamilia(String familia) {
+        this.familia = familia;
     }
 
     public String getAtivo() {
@@ -74,13 +91,5 @@ public class Produto {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
-    }
-
-    public String getSubtipo() {
-        return subtipo;
-    }
-
-    public void setSubtipo(String subtipo) {
-        this.subtipo = subtipo;
     }
 }

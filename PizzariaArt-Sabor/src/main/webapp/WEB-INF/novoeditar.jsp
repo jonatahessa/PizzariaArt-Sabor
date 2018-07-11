@@ -34,22 +34,6 @@
                       </select>
                   </div>
 
-                  <div class="form-group" id="sub-tipo">
-                      <label for="tipoProduto">Tipo do Prato</label>
-                      <select id="select-subtipo" class="form-control" name="subtipo">
-                          <option value="DODIA" ${produto.subtipo == 'DODIA' ? 'selected' : ''}>Pratos do Dia</option>
-                          <option value="MASSA" ${produto.subtipo == 'MASSA' ? 'selected' : ''}>Massas</option>
-                          <option value="MUQUECA" ${produto.subtipo == 'MUQUECA' ? 'selected' : ''}>Muquecas</option>
-                          <option value="PEIXADA" ${produto.subtipo == 'PEIXADA' ? 'selected' : ''}>Peixadas</option>
-                          <option value="CARNE" ${produto.subtipo == 'CARNE' ? 'selected' : ''}>Carnes</option>
-                          <option value="FRANGO" ${produto.subtipo == 'FRANGO' ? 'selected' : ''}>Frangos</option>
-                          <option value="CARNEASSADA" ${produto.subtipo == 'CARNEASSADA' ? 'selected' : ''}>Carnes Assadas</option>
-                          <option value="TODODIA" ${produto.subtipo == 'TODODIA' ? 'selected' : ''}>Todo Dia</option>
-                      </select>
-                  </div>
-
-
-
                   <div id="nome" class="form-group">
                       <label for="nomeProduto">Nome</label>
                       <input class="form-control" type="text" value="${produto.nome}" name="nome"/>
@@ -60,15 +44,25 @@
                       <textarea class="form-control" name="descricao" rows="3">${produto.descricao}</textarea>
                   </div>
 
-                  <div id="preco" class="form-group">
-                      <label for="">Preço</label>
-                      <input class="form-control" type="text" value="${produto.preco}" name="preco"/>
+                  <div id="broto" class="form-group">
+                      <label for="">Broto</label>
+                      <input class="form-control" type="text" value="${produto.broto}" name="broto"/>
                   </div>
 
-                  <!--<div id="broto" class="form-group">
-                      <label for="">Broto</label>
-                      <input class="form-control" type="text" value="${produto.precoBroto}" name="precoBroto"/>
-                  </div>-->
+                  <div id="media" class="form-group">
+                      <label for="">Média</label>
+                      <input class="form-control" type="text" value="${produto.media}" name="media"/>
+                  </div>
+
+                  <div id="grande" class="form-group">
+                      <label for="">Grande</label>
+                      <input class="form-control" type="text" value="${produto.grande}" name="grande"/>
+                  </div>
+
+                  <div id="familia" class="form-group">
+                      <label for="">Família</label>
+                      <input class="form-control" type="text" value="${produto.familia}" name="familia"/>
+                  </div>
 
                   <div class="form-inline">
                     <div class="col-6">

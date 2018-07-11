@@ -41,10 +41,11 @@ public class Salvar extends HttpServlet {
             if (request.getParameter("codigo") == null || request.getParameter("codigo").equalsIgnoreCase("0")) {
                 pizza.setNome(request.getParameter("nome"));
                 pizza.setDescricao(request.getParameter("descricao"));
-                pizza.setPreco(request.getParameter("preco"));
-                pizza.setPrecoBroto(request.getParameter("precoBroto"));
+                pizza.setBroto(request.getParameter("broto"));
+                pizza.setMedia(request.getParameter("media"));
+                pizza.setGrande(request.getParameter("grande"));
+                pizza.setFamilia(request.getParameter("familia"));
                 pizza.setTipo(request.getParameter("tipo"));
-                pizza.setSubtipo(request.getParameter("subtipo"));
                 pizza.setAtivo("SIM");
                 try {
                     Utils.inserirPizza(pizza);
@@ -57,10 +58,11 @@ public class Salvar extends HttpServlet {
                 pizza.setCodigo(Integer.parseInt(request.getParameter("codigo")));
                 pizza.setNome(request.getParameter("nome"));
                 pizza.setDescricao(request.getParameter("descricao"));
-                pizza.setPreco(request.getParameter("preco"));
-                pizza.setPrecoBroto(request.getParameter("precoBroto"));
+                pizza.setBroto(request.getParameter("broto"));
+                pizza.setMedia(request.getParameter("media"));
+                pizza.setGrande(request.getParameter("grande"));
+                pizza.setFamilia(request.getParameter("familia"));
                 pizza.setTipo(request.getParameter("tipo"));
-                pizza.setSubtipo(request.getParameter("subtipo"));
                 pizza.setAtivo(request.getParameter("ativo"));
 
                 try {

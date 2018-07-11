@@ -34,11 +34,12 @@ public class DaoProduto {
                 pizza.setCodigo(result.getInt("ID"));
                 pizza.setNome(result.getString("Nome"));
                 pizza.setDescricao(result.getString("Descricao"));
-                pizza.setPreco(result.getString("Preco"));
-                pizza.setPrecoBroto(result.getString("Broto"));
+                pizza.setBroto(result.getString("Broto"));
+                pizza.setMedia(result.getString("Media"));
+                pizza.setGrande(result.getString("Grande"));
+                pizza.setFamilia(result.getString("Familia"));
                 pizza.setAtivo(result.getString("Ativo"));
                 pizza.setTipo(result.getString("Tipo"));
-                pizza.setSubtipo(result.getString("Subtipo"));
                 listaPizza.add(pizza);
             }
         } finally {
@@ -73,8 +74,8 @@ public class DaoProduto {
     public static void inserir(Produto pizza)
             throws SQLException, Exception {
 
-        String sql = "INSERT INTO tb_produto (Nome, Descricao, Preco, Broto, Ativo, Tipo, Subtipo) "
-                + "VALUES (?, ?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO tb_produto (Nome, Descricao, Broto, Media, Grande, Familia, Ativo, Tipo) "
+                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         Connection connection = null;
         PreparedStatement statement = null;
         try {
@@ -83,11 +84,12 @@ public class DaoProduto {
 
             statement.setString(1, pizza.getNome());
             statement.setString(2, pizza.getDescricao());
-            statement.setString(3, pizza.getPreco());
-            statement.setString(4, pizza.getPrecoBroto());
-            statement.setString(5, "SIM");
-            statement.setString(6, pizza.getTipo());
-            statement.setString(7, pizza.getSubtipo());
+            statement.setString(3, pizza.getBroto());
+            statement.setString(4, pizza.getMedia());
+            statement.setString(5, pizza.getGrande());
+            statement.setString(6, pizza.getFamilia());
+            statement.setString(7, "SIM");
+            statement.setString(8, pizza.getTipo());
             System.out.println(statement.toString());
 
             System.out.println("Executando COMANDO SQL: " + sql);
@@ -153,10 +155,11 @@ public class DaoProduto {
         String sql = "UPDATE tb_produto "
                 + "SET Nome = ?, "
                 + "Descricao = ?, "
-                + "Preco = ?, "
                 + "Broto = ?, "
+                + "Media = ?, "
+                + "Grande = ?, "
+                + "Familia = ?, "
                 + "Tipo = ?, "
-                + "Subtipo = ?, "
                 + "Ativo = ? "
                 + "WHERE ID = ?;";
 
@@ -168,12 +171,13 @@ public class DaoProduto {
 
             statement.setString(1, pizza.getNome());
             statement.setString(2, pizza.getDescricao());
-            statement.setString(3, pizza.getPreco());
-            statement.setString(4, pizza.getPrecoBroto());
-            statement.setString(5, pizza.getTipo());
-            statement.setString(6, pizza.getSubtipo());
-            statement.setString(7, pizza.getAtivo());
-            statement.setInt(8, pizza.getCodigo());
+            statement.setString(3, pizza.getBroto());
+            statement.setString(4, pizza.getMedia());
+            statement.setString(5, pizza.getGrande());
+            statement.setString(6, pizza.getFamilia());
+            statement.setString(7, pizza.getTipo());
+            statement.setString(8, pizza.getAtivo());
+            statement.setInt(9, pizza.getCodigo());
             System.out.println(statement.toString());
 
             System.out.println("Executando COMANDO SQL: " + sql);
@@ -187,7 +191,7 @@ public class DaoProduto {
             }
         }
     }
-    
+
     public static Produto obter(int id)
             throws SQLException, Exception {
         String sql = "SELECT * FROM tb_produto WHERE ID = ?;";
@@ -207,17 +211,18 @@ public class DaoProduto {
             produto.setCodigo(result.getInt("ID"));
             produto.setNome(result.getString("NOME"));
             produto.setDescricao(result.getString("DESCRICAO"));
-            produto.setPreco(result.getString("PRECO"));
-            produto.setPrecoBroto(result.getString("BROTO"));
+            produto.setBroto(result.getString("BROTO"));
+            produto.setMedia(result.getString("MEDIA"));
+            produto.setGrande(result.getString("GRANDE"));
+            produto.setFamilia(result.getString("FAMILIA"));
             produto.setAtivo(result.getString("ATIVO"));
             produto.setTipo(result.getString("TIPO"));
-            produto.setSubtipo(result.getString("SUBTIPO"));
         }
 
         return produto;
     }
-    
-    public static boolean verificarUsuario (String login, String senha) throws
+
+    public static boolean verificarUsuario(String login, String senha) throws
             SQLException, Exception {
         String sql = "SELECT * FROM tb_user"
                 + " WHERE Username = ?"
@@ -227,7 +232,7 @@ public class DaoProduto {
 
         connection = ConnectionUtils.getConnection();
         statement = connection.prepareStatement(sql);
-        
+
         statement.setString(1, login);
         statement.setString(2, senha);
 

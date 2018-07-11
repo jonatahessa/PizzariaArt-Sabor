@@ -42,8 +42,10 @@
                         <th scope="col">Código</th>
                         <th scope="col">Nome</th>
                         <th scope="col">Descrição</th>
-                        <th scope="col">Preço</th>
                         <th scope="col">Broto</th>
+                        <th scope="col">Média</th>
+                        <th scope="col">Grande</th>
+                        <th scope="col">Família</th>
                         <th scope="col">Tipo</th>
                         <th scope="col">Ativo</th>
                         <th scope="col">Editar</th>
@@ -56,8 +58,10 @@
                       <td>${produto.codigo}</td>
                       <td>${produto.nome}</td>
                       <td>${produto.descricao}</td>
-                      <td>${produto.preco}</td>
-                      <td>${produto.precoBroto}</td>
+                      <td>${produto.broto}</td>
+                      <td>${produto.media}</td>
+                      <td>${produto.grande}</td>
+                      <td>${produto.familia}</td>
                       <td>${produto.tipo}</td>
                       <td>${produto.ativo}</td>
                       <td><form action="AbrirEditar" method="get">
