@@ -35,7 +35,6 @@ public class Login extends HttpServlet {
         boolean confirma = false;
         try {
             senhaCript = Utils.criptografia(request.getParameter("senha"));
-            System.out.println(senhaCript);
         } catch (NoSuchAlgorithmException ex) {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
         }

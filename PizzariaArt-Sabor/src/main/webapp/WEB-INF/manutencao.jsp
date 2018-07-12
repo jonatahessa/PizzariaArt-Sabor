@@ -65,11 +65,11 @@
                       <td>${produto.tipo}</td>
                       <td>${produto.ativo}</td>
                       <td><form action="AbrirEditar" method="get">
-                        <input type="hidden" name="codigo-editar" value="${produto.codigo}">
-                          <button class="btn btn-warning btn-block" type="submit" name="button">Editar</button>
+                        <input type="hidden" name="codigo-editar" value="${produto.codigo}"/>
+                          <button class="btn btn-warning btn-block" type="submit">Editar</button>
                       </form></td>
                       <td><form action="AtivarDesativar" method="post">
-                        <input type="hidden" name="codigo-ativar" value="${produto.codigo}">
+                        <input type="hidden" name="codigo-ativar" value="${produto.codigo}"/>
 
                           <c:choose>
                             <c:when test="${produto.ativo == 'SIM'}">

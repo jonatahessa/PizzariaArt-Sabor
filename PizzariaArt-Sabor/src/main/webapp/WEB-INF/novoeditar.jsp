@@ -16,8 +16,8 @@
     </head>
     <body>
       <section class="container-fluid">
-          <div class="row">
-              <form id="formulario" class="col-xs-12 col-sm-12 col-lg-6" action="Salvar" method="post">
+          <div class="row formulario justify-content-center">
+              <form class="col-xs-12 col-sm-12 col-lg-6" action="Salvar" method="post">
 
                   <div>
                       <h2 class="text-center">Produto</h2>
@@ -30,7 +30,7 @@
                       <select id="select-tipo" class="form-control" name="tipo">
                           <option value="PIZZA" ${produto.tipo == 'PIZZA' ? 'selected' : ''}>Pizza</option>
                           <option value="DOCE" ${produto.tipo == 'DOCE' ? 'selected' : ''}>Pizza Doce</option>
-                          <option value="PRATO" ${produto.tipo == 'PRATO' ? 'selected' : ''}>Prato</option>
+                          <option value="PROMOCAO" ${produto.tipo == 'PROMOCAO' ? 'selected' : ''}>Promoção</option>
                       </select>
                   </div>
 

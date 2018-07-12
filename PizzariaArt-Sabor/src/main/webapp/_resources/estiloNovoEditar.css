@@ -1,12 +1,3 @@
-#formulario {
-  margin: auto;
-  float: none;
-}
-
-.botoes {
-  width: 100%;
-}
-
-#broto {
-  display: block;
+.formulario {
+  margin: 40px;
 }
