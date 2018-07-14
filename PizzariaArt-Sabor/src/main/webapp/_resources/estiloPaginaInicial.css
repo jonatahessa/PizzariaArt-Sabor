@@ -59,6 +59,10 @@ body {
         position: fixed;
         z-index: 150;
     }
+
+    .padded {
+      padding-top: 80px;
+    }
 }
 
 @media (max-width: 769px) {
@@ -89,6 +93,10 @@ body {
 
     .mobile-none {
       display: none;
+    }
+
+    .padded {
+      padding-top: 120px;
     }
 }
 

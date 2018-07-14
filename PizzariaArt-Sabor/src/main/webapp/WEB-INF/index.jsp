@@ -50,9 +50,39 @@
                     <h1 class="fonte-lobster">Home</h1>
                     <hr/>
                     <div class="row justify-content-center">
+                      <div id="carouselExampleIndicators" class="carousel slide carousel-margin col-12 padded" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./_imagens/pizza01.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./_imagens/pizza02.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./_imagens/pizza03.jpg" alt="Third slide">
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
                         <div class="col-12">
-                            <p>Tradicional na região, a <strong>CADONAS PIZZARIA & RESTAURANTE</strong> vem unindo a tradição da pizza com a sofisticação informal. E não para de crescer, evoluir, adotando sempre o lema: “Atender acima da expectativa dos clientes” como sinônimo de qualidade.</p>
-                            <p>Com investimento constante nas instalações, produtos e serviços, faz com que a <strong>CADONAS PIZZARIA & RESTAURANTE</strong> seja considerada um clássico na terra das pizzarias.</p>
+                            <p>Tradicional na região, a <strong>Art & Sabor</strong> vem unindo a tradição da pizza com a sofisticação informal. E não para de crescer, evoluir, adotando sempre o lema: “Atender acima da expectativa dos clientes” como sinônimo de qualidade.</p>
+                            <p>Com investimento constante nas instalações, produtos e serviços, faz com que a <strong>Art & Sabor</strong> seja considerada um clássico na terra das pizzarias.</p>
                             <p>Todos os recursos são colocados à disposição dos funcionários, para que a filosofia desde a fundação continue sempre a ser: SERVIR PIZZAS COM CARINHO, DEDICAÇÃO E ALEGRIA.</p>
                         </div>
                     </div>
@@ -63,7 +93,50 @@
                 <div id="section2" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section3 padded">
                     <h1 class="fonte-lobster">Promoções</h1>
                     <hr/>
-
+                    <div class="row justify-content-center">
+                      <div class="col-12">
+                        <table class="table table-dark text-center">
+                          <thead>
+                            <tr>
+                              <th colspan="4">Na compra de cada PIZZA, você receberá um cupom valendo pontos.</th>
+                            </tr>
+                            <tr>
+                              <th>Broto</th>
+                              <th>Média</th>
+                              <th>Grande</th>
+                              <th>Família</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>01 Ponto</td>
+                              <td>02 Pontos</td>
+                              <td>03 Pontos</td>
+                              <td>04 Pontos</td>
+                            </tr>
+                            <tr>
+                              <td colspan="4"><strong>Promoção JUNTOU GANHOU</strong></td>
+                            </tr>
+                            <tr>
+                              <th>11 Pontos</th>
+                              <th>22 Pontos</th>
+                              <th>33 Pontos</th>
+                              <th>44 Pontos</th>
+                            </tr>
+                            <tr>
+                              <td>Pizza Broto</td>
+                              <td>Pizza Média</td>
+                              <td>Pizza Grande</td>
+                              <td>Pizza Família</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <p>* Valores da promoção referência pizza de Mussarela.</p>
+                        <p>* Promoções sujeitas a témino sem aviso prévio.</p>
+                        <p>* Cobramos taxa de entrega, consulte.</p>
+                        <p>* Promoção válida a 1 pizza por dia.</p>
+                      </div>
+                    </div>
                 </div>
             </div>
 
@@ -75,14 +148,17 @@
                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-5">
                           <button class="pizzas-botoes" type="button" data-toggle="modal" data-target="#modal-pizzas">
                             <img class="img-fluid" src="./_imagens/pizzasalgada.png"/>
-                            <h2>Clique para mostrar pizzas</h2>
+                            <h1 class="fonte-acme text-danger">Clique para mostrar pizzas</h1>
                           </button>
                         </div>
                     </div>
 
-                    <div class="row justify-content-center pizzas-botoes">
-                        <div class="col-xs-12 col-sm-12 col-lg-8">
-
+                    <div class="row justify-content-center">
+                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-5">
+                          <button class="pizzas-botoes" type="button" data-toggle="modal" data-target="#modal-doces">
+                            <img class="img-fluid" src="./_imagens/pizzadoce.png"/>
+                            <h1 class="fonte-acme text-danger">Clique para mostrar pizzas doces</h1>
+                          </button>
                         </div>
                     </div>
                 </div>
@@ -92,9 +168,9 @@
                 <div id="section4" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section4 padded">
                     <h1 class="fonte-lobster">Localização</h1>
                     <hr/>
-                    <h4 class="text-center">Av. Cupecê, 1185 - Jardim Prudência, São Paulo - SP</h4>
-                    <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d543.2591949763594!2d-46.669925939011385!3d-23.654575093106885!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a9fed0d3bd3%3A0x2b8d4f8ef0f93247!2sCadonas+Restaurante+e+Pizzaria!5e0!3m2!1spt-BR!2sbr!4v1529154604002" height="450" allowfullscreen></iframe>
-                </div>
+                    <h4 class="text-center">Rua Padre José de Anchieta, 1211 - Santo Amaro, São Paulo - SP</h4>
+                    <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14618.271252464529!2d-46.69484651628416!3d-23.655643951827997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc9bf7cc83cf7176!2sPizzaria+Art+%26+Sabor!5e0!3m2!1spt-BR!2sbr!4v1531574331547" height="450" frameborder="0" allowfullscreen></iframe>
+                  </div>
             </div>
 
             <div class="row justify-content-center">
@@ -104,13 +180,19 @@
                     <div class="row justify-content-center">
                         <div class="col-12">
                             <div class="text-center display-4">
-                                <h2 class="display-4"><strong>5563-6556</strong></h2>
-                                <a class="btn btn-success col-xs-12 col-sm-12 Pizza col-lg-6" href="tel:01155636556"><h2>Ligar</h2></a>
-                                <h2 class="display-4"><strong>5564-6612</strong></h2>
-                                <a class="btn btn-success col-xs-12 col-sm-12 Pizza col-lg-6" href="tel:01155646612"><h2>Ligar</h2></a>
+                                <h2 class="display-4"><strong>5521-7770</strong></h2>
+                                <a class="btn btn-success col-xs-12 col-sm-12 Pizza col-lg-6" href="tel:01155217770"><h2>Ligar</h2></a>
+                                <h2 class="display-4"><strong>5685-5508</strong></h2>
+                                <a class="btn btn-success col-xs-12 col-sm-12 Pizza col-lg-6" href="tel:01156855508"><h2>Ligar</h2></a>
+                                <h2 class="display-4"><strong>3582-4772</strong></h2>
+                                <a class="btn btn-success col-xs-12 col-sm-12 Pizza col-lg-6" href="tel:01135824772"><h2>Ligar</h2></a>
+                                <h2 class="display-4"><strong>99602-2525</strong></h2>
+                                <a class="btn btn-success col-xs-12 col-sm-12 Pizza col-lg-6" href="tel:011996022525"><h2>Ligar</h2></a>
                             </div>
                             <h3 class="text-center">Horários de funcionamento</h3>
-                            <h4 class="text-center">Segunda a Sábado das 11h às 15h</h4>
+                            <h4 class="text-center">Sextas e Sábados das 18h às 23h50</h4>
+                            <h4 class="text-center">Domingos das 18h às 22h50</h4>
+                            <h4 class="text-center">Terça a Quinta das 18h às 22h50</h4>
                             <p class="text-center">Copyright (c) Art & Sabor Copyright Holder All Rights Reserved.</p>
                             <p class="text-center">Developed by Jonata Hessa</p>
                         </div>
@@ -166,11 +248,11 @@
                         <c:forEach var="doce" items="${doces}">
                             <li class="menu-category titulopreco">
                                 <div class="">
-                                    <p class="titulo"><strong>${doce.codigo} - ${doce.nome}</strong></p>
-                                    <p class="preco"><strong>${doce.broto}</strong></p>
-                                    <p class="preco"><strong>${doce.media}</strong></p>
-                                    <p class="preco"><strong>${doce.grande}</strong></p>
-                                    <p class="preco"><strong>${doce.familia}</strong></p>
+                                    <p class="text-danger"><strong>${doce.codigo} - ${doce.nome}</strong></p>
+                                    <p class="text-success"><strong>Broto R$ ${doce.broto}</strong></p>
+                                    <p class="text-success"><strong>Média R$ ${doce.media}</strong></p>
+                                    <p class="text-success"><strong>Grande R$ ${doce.grande}</strong></p>
+                                    <p class="text-success"><strong>Família R$ ${doce.familia}</strong></p>
                                     <p class="descricao">${doce.descricao}</p>
                                 </div>
                             </li>
