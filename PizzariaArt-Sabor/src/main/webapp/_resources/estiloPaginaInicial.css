@@ -63,6 +63,10 @@ body {
     .padded {
       padding-top: 80px;
     }
+
+    .backgrounded {
+        background-color: rgba(255, 255, 255, .9);
+    }
 }
 
 @media (max-width: 769px) {
@@ -82,7 +86,6 @@ body {
     #menu-mobile {
         background-color: #FFFFFF;
         position: fixed;
-        opacity: 0.9;
         z-index: 150;
     }
 
@@ -97,6 +100,10 @@ body {
 
     .padded {
       padding-top: 120px;
+    }
+
+    .backgrounded {
+        background-color: rgba(255, 255, 255, 1);
     }
 }
 
@@ -120,11 +127,6 @@ body {
 
 .fonte-mark {
     font-family: 'Marck Script', cursive;
-}
-
-.backgrounded {
-    background-color: #FFFFFF;
-    opacity: 0.9;
 }
 
 .categorias {

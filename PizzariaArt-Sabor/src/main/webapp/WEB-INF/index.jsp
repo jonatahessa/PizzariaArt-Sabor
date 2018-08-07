@@ -49,6 +49,13 @@
                 <div id="section1" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section1 padded">
                     <h1 class="fonte-lobster">Home</h1>
                     <hr/>
+
+                    <div class="row justify-content-center">
+                      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                        <img class="img-fluid" src="./_imagens/art-sabor.png" alt="logo art e sabor" />
+                      </div>
+                    </div>
+
                     <div class="row justify-content-center">
                       <div id="carouselExampleIndicators" class="carousel slide carousel-margin col-12 padded" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -98,7 +105,7 @@
                         <table class="table table-dark text-center">
                           <thead>
                             <tr>
-                              <th colspan="4">Na compra de cada PIZZA, você receberá um cupom valendo pontos.</th>
+                              <th colspan="4" class="text-warning">Na compra de cada PIZZA, você receberá um cupom valendo pontos.</th>
                             </tr>
                             <tr>
                               <th>Broto</th>
@@ -115,7 +122,7 @@
                               <td>04 Pontos</td>
                             </tr>
                             <tr>
-                              <td colspan="4"><strong>Promoção JUNTOU GANHOU</strong></td>
+                              <td colspan="4" class="text-warning"><strong>Promoção JUNTOU GANHOU</strong></td>
                             </tr>
                             <tr>
                               <th>11 Pontos</th>
