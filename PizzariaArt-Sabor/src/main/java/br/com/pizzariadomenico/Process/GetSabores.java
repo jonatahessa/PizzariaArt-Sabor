@@ -6,8 +6,6 @@
 package br.com.pizzariadomenico.Process;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -31,9 +29,11 @@ public class GetSabores extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
         List<Produto> pizzas = Utils.ListarPizzasPaginaInicial("PIZZA");
         List<Produto> doces = Utils.ListarPizzasPaginaInicial("DOCE");
+        List<Produto> promo = Utils.ListarPizzasPaginaInicial("PROMOCAO");
 
         request.setAttribute("pizzas", pizzas);
         request.setAttribute("doces", doces);
+        request.setAttribute("promo", promo);
         RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/index.jsp");
         dispatcher.forward(request, response);
     }
